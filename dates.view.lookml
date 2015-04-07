@@ -17,6 +17,7 @@
     timeframes: [date, week, month]
     convert_tz: false
     sql: ${TABLE}.check_in
+    drill_fields: [check_in, check_out, active, adults, children, date_id]
 
   - dimension: check_in_day
     sql: ${TABLE}.check_in_day
@@ -55,5 +56,6 @@
 
   - measure: count
     type: count
-    drill_fields: [date_id, hotel_config.count]
+    drill_fields: [check_in, check_out, active, adults, children, date_id]
+
 

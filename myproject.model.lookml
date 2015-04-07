@@ -14,6 +14,8 @@
     - join: dates
       foreign_key: date_id
 
+# what if i add another hotel_config
+# --- errors
 
 - explore: location
 
